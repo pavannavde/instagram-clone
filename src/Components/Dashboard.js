@@ -63,14 +63,14 @@ const Dashboard = () => {
             }
     }
 
-
+     
     return(
-        <div>
-
+        <div className="signup">
+            
             <h1>Welcome {name}</h1>
-            <p>{joke}</p>
+            <p>{joke}</p>  
 
-            <button onClick={handleLogout}>Logout</button>
+            <button className="btn" onClick={handleLogout}>Logout</button>
         </div>
     )
 }

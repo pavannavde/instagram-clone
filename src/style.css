@@ -1,4 +1,88 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 input, button{
     display: block;
     margin: 10px;;
+}
+#root{
+    display: flex;
+    align-items: center;
+    /* background-color: tomato; */
+    background:linear-gradient(127deg,rgb(243, 58, 25),rgb(47, 62, 194));
+    height: 100vh;
+}
+.signup{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40vw;
+    background-color: #fff;
+    padding:15px;
+    width:17vw;
+    height: 100%;
+    /* font-size: 18px; */
+    border-radius: 10px;
+    
+}
+.signup>form{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.signup>h1{
+    font-size: 36px;
+}
+.signup>form>input{
+    width:90%;
+    height:15%;
+    padding: 5px;
+    color:black;
+    border:0.5px solid rgb(197, 190, 190);
+    font-size: 16px;
+    outline: none;
+}
+.btn{
+    width:8vw;
+    padding:5px;
+    font-size: 18px;
+    border: none;
+    color:#fff;
+    border-radius: 5px;
+    background-color: rgb(54, 136, 190);
+}
+.btn:hover{
+ 
+  background-color: rgb(14, 122, 72);
+  cursor: pointer;
+
+}
+.navbar{
+    display: flex;
+    width:100vw;
+    background-color: #050505;
+    color: #fff;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    position: fixed;
+    top:0px;
+}
+.navbar>div{
+    display: flex;
+    gap:20px;
+}
+.navbar>div>img{
+    width: 30px;
+    height: 30px;
+}
+.navbar>a>img{
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    cursor: pointer;
 }

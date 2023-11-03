@@ -60,8 +60,8 @@ const Signup = () => {
 
 
     return(
-        <div>
-            <h1>Signup</h1>
+        <div className="signup">
+            <h1>Signup<span style={{color:'tomato', fontSize:"40px"}}>•</span></h1>
             <form onSubmit={handleSubmit}>
                  <input type="text"  placeholder="Enter your name" name = "name"
                     value={user.name} onChange={handleInput}
@@ -75,8 +75,9 @@ const Signup = () => {
                  <input type="password"  placeholder="Enter your confirm password" name = "cpassword"
                     value={user.cpassword} onChange={handleInput}
                  />
-                 <button type="submit">Submit</button>
+                 <button  className="btn" type="submit">Submit</button>
             </form>
+            <p>Already have an account? <a href="/login">Login</a></p>
         </div>
     )
 }

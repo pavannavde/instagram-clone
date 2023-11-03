@@ -45,10 +45,10 @@ const Login = () => {
         }
     }
 
-
     return(
-        <div>
-            <h1>Login</h1>
+        <div className="root">
+          <div className="signup">
+            <h1>Login<span style={{color:'tomato'}}>•</span></h1>
             <form onSubmit={handleSubmit}>
                  
                  <input type="text"  placeholder="Enter your email" name = "email"
@@ -58,9 +58,12 @@ const Login = () => {
                     value={user.password} onChange={handleInput}
                  />
                  
-                 <button type="submit">Submit</button>
+                 <button className="btn" type="submit">Submit</button>
             </form>
+            <p>Don't have an account? <a href="/">Signup</a></p>
         </div>
+        </div>
+        
     )
 }
 
